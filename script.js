@@ -43,5 +43,8 @@ function closeModal(){
     c('.pizzaWindowArea').style.opacity = 0;
     setTimeout(()=>{
         c('.pizzaWindowArea').style.display = 'none';
-    }, 200);
+    }, 500);
 }
+cs('.pizzaInfo--cancelButton, .pizzaInfo--cancelMobileButton').forEach((item)=>{
+    item.addEventListener('click', closeModal);
+});
