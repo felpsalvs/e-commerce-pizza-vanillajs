@@ -98,16 +98,33 @@ c(".pizzaInfo--addButton").addEventListener("click", () => {
 
 // Atualizar carrinho
 function updateCart() {
-    c(".cart").innerHTML = "";
-    let total = 0;
-    cart.map((item) => {
-        let cartItem = c(".models .cart-item").cloneNode(true);
-        cartItem.querySelector("img").src = pizzaJson.find((pizza) => pizza.id == item.id).img;
-        cartItem.querySelector("h3").innerHTML = pizzaJson.find((pizza) => pizza.id == item.id).name;
-        cartItem.querySelector("h4").innerHTML = `R$ ${pizzaJson.find((pizza) => pizza.id == item.id).price.toFixed(2)}`;
-        cartItem.querySelector("span").innerHTML = item.qt;
-        total += pizzaJson.find((pizza) => pizza.id == item.id).price * item.qt;
-        c(".cart").append(cartItem);
-    }).join("");
-    c(".cartTotal").innerHTML = `R$ ${total.toFixed(2)}`;
+    if(cart.length > 0) {
+      c('aside').classList.add('show');
+      c('.cart').innerHTML = '';
+      for(let i in cart) {
+        let pizzaItem = pizzaJson.find((item)=>item.id == cart[i].id);
+        let cartItem = c('.models .cart--item').cloneNode(true);
+
+        let pizzaSizeName;
+        switch(cart[i].size) {
+          case 0:
+            pizzaSizeName = 'Pequena';
+            break;
+          case 1:
+            pizzaSizeName = 'Média';
+            break;
+          case 2:
+            pizzaSizeName = 'Grande';
+            break;
+        }
+        let pizzaName = `${pizzaItem.name} (${pizzaSizeName})`;
+        cartItem.querySelector('img').src = pizzaItem.img;
+        cartItem.querySelector('.cart--item-name').innerHTML = pizzaName;
+        cartItem.querySelector('.cart--item--qt').innerHTML = cart[i].qt;
+
+        c('cart').append(cartItem);
+      }
+    } else {
+      c('aside').classList.remove('show');
     }
+}
