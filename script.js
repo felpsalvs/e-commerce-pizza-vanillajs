@@ -149,6 +149,9 @@ function updateCart() {
     }
     desconto = subtotal * 0.1;
     total = subtotal - desconto;
+    c(".subtotal span:last-child").innerHTML = `R$ ${subtotal.toFixed(2)}`;
+    c(".desconto span:last-child").innerHTML = `R$ ${desconto.toFixed(2)}`;
+    c(".total span:last-child").innerHTML = `R$ ${total.toFixed(2)}`;
   } else {
     c("aside").classList.remove("show");
   }
