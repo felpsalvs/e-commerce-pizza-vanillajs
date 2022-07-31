@@ -21,6 +21,7 @@ pizzaJson.map((item, index) => {
     modalQty = 1;
     modalKey = key;
 
+    // c(".pizzaBig img").src = pizzaJson[key].img;
     c(".pizzaBig img").src = pizzaJson[key].img;
     c(".pizzaInfo h1").innerHTML = pizzaJson[key].name;
     c(".pizzaInfo--desc").innerHTML = pizzaJson[key].description;
