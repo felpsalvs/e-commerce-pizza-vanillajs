@@ -165,5 +165,6 @@ function updateCart() {
     c(".total span:last-child").innerHTML = `R$ ${total.toFixed(2)}`;
   } else {
     c("aside").classList.remove("show");
+    c('aside').style.left = "100vw";
   }
 }
