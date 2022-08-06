@@ -102,7 +102,7 @@ c(".menu-openner").addEventListener("click", () => {
     c("aside").style.left = "0";
   }
 });
-c(".menu--closer").addEventListener("click", () => {
+c(".menu-closer").addEventListener("click", () => {
   c("aside").style.left = "100vw";
 });
 
