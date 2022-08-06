@@ -97,7 +97,7 @@ c(".pizzaInfo--addButton").addEventListener("click", () => {
   closeModal();
 });
 
-c(".menu--openner").addEventListener("click", () => {
+c(".menu-openner").addEventListener("click", () => {
   if (cart.length > 0) {
     c("aside").style.left = "0";
   }
