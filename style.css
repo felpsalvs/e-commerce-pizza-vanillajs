@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #eee;
+  background-color: #404040;
   font-family: "Lato", Helvetica, Arial;
   font-size: 15px;
   display: flex;
@@ -63,8 +63,8 @@ h1 {
 }
 
 .pizza-title {
-  background-color: #244c88;
-  color: #fff;
+  background-color: #F23322;
+  color: #84BF04;
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -89,9 +89,9 @@ h1 {
 .pizza-item--img {
   width: 200px;
   height: 200px;
-  background-color: #eee;
+  background-color: #404040;
   border-radius: 100px;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
 }
 .pizza-item--img img {
   width: 100%;
