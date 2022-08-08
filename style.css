@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #404040;
+  background-color: #F2921D;
   font-family: "Lato", Helvetica, Arial;
   font-size: 15px;
   display: flex;
@@ -63,8 +63,9 @@ h1 {
 }
 
 .pizza-title {
-  background-color: #F23322;
-  color: #84BF04;
+  background-color: #84BF04;
+  color: #3B7302;
+  text-transform: uppercase;
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -89,7 +90,7 @@ h1 {
 .pizza-item--img {
   width: 200px;
   height: 200px;
-  background-color: #404040;
+  background-color: #F2921D;
   border-radius: 100px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
 }
