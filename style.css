@@ -217,7 +217,7 @@ h1 {
   background-color: #ccc;
 }
 .pizzaInfo--size.selected {
-  background-color: #399ade;
+  background-color: #F23322;
   color: #fff;
 }
 .pizzaInfo--size.selected span {
@@ -262,14 +262,14 @@ h1 {
   margin-top: 30px;
   padding: 20px 30px;
   border-radius: 20px;
-  background-color: #48d05f;
+  background-color: #3B7302;
   color: #fff;
   display: inline-block;
   cursor: pointer;
   margin-right: 30px;
 }
 .pizzaInfo--addButton:hover {
-  background-color: #32a345;
+  background-color: #84BF04;
 }
 .pizzaInfo--cancelButton {
   display: inline-block;
@@ -339,7 +339,7 @@ h1 {
 .cart--finalizar {
   padding: 20px 30px;
   border-radius: 20px;
-  background-color: #48d05f;
+  background-color: #84BF04;
   color: #fff;
   cursor: pointer;
   text-align: center;
