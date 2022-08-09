@@ -442,10 +442,3 @@ h1 {
     display: block;
   }
 }
-.footer--area {
-  background: #ffab62;
-  width: 100%;
-  position: absolute;
-  bottom: -350px;
-  left: 0;
-}
