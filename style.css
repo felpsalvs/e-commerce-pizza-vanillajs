@@ -1,14 +1,22 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
+
 body {
-  background-color: #F2921D;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
   font-family: "Lato", Helvetica, Arial;
   font-size: 15px;
-  display: flex;
-  margin: 0;
-  min-height: 100vh;
 }
+
 .models {
   display: none;
 }
@@ -42,7 +50,7 @@ header {
 }
 
 aside {
-  background-color: #9ccbe6;
+  background-color: #F2921D;
   width: 0vw;
   font-family: "Hepta Slab", Helvetica, Arial;
   transition: all ease 0.2s;
@@ -56,7 +64,7 @@ aside.show {
 }
 main {
   flex: 1;
-  padding: 20px;
+  overflow-y: scroll;
 }
 h1 {
   font-family: "Hepta Slab", Helvetica, Arial;
@@ -66,8 +74,11 @@ h1 {
   background-color: #84BF04;
   color: #3B7302;
   text-transform: uppercase;
-  padding: 10px;
-  font-size: 20px;
+  font-size: 60px;
+  width: 100vw;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   text-align: center;
 }
@@ -103,7 +114,7 @@ h1 {
   height: 50px;
   line-height: 50px;
   border-radius: 25px;
-  background-color: #388bc5;
+  background-color: #3B7302;
   text-align: center;
   color: #fff;
   font-size: 22px;
@@ -112,7 +123,7 @@ h1 {
   transition: all ease 0.2s;
 }
 .pizza-item a:hover .pizza-item--add {
-  background-color: #244c88;
+  background-color: #84BF04;
 }
 .pizza-item--price {
   font-size: 15px;
