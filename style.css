@@ -50,7 +50,7 @@ header {
 }
 
 aside {
-  background-color: #F2921D;
+  background-color: #f2921d;
   width: 0vw;
   font-family: "Hepta Slab", Helvetica, Arial;
   transition: all ease 0.2s;
@@ -71,8 +71,8 @@ h1 {
 }
 
 .pizza-title {
-  background-color: #84BF04;
-  color: #3B7302;
+  background-color: #84bf04;
+  color: #3b7302;
   text-transform: uppercase;
   font-size: 60px;
   width: 100vw;
@@ -101,7 +101,7 @@ h1 {
 .pizza-item--img {
   width: 200px;
   height: 200px;
-  background-color: #F2921D;
+  background-color: #f2921d;
   border-radius: 100px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
 }
@@ -114,7 +114,7 @@ h1 {
   height: 50px;
   line-height: 50px;
   border-radius: 25px;
-  background-color: #3B7302;
+  background-color: #3b7302;
   text-align: center;
   color: #fff;
   font-size: 22px;
@@ -123,7 +123,7 @@ h1 {
   transition: all ease 0.2s;
 }
 .pizza-item a:hover .pizza-item--add {
-  background-color: #84BF04;
+  background-color: #84bf04;
 }
 .pizza-item--price {
   font-size: 15px;
@@ -217,7 +217,7 @@ h1 {
   background-color: #ccc;
 }
 .pizzaInfo--size.selected {
-  background-color: #F23322;
+  background-color: #f23322;
   color: #fff;
 }
 .pizzaInfo--size.selected span {
@@ -262,14 +262,14 @@ h1 {
   margin-top: 30px;
   padding: 20px 30px;
   border-radius: 20px;
-  background-color: #3B7302;
+  background-color: #3b7302;
   color: #fff;
   display: inline-block;
   cursor: pointer;
   margin-right: 30px;
 }
 .pizzaInfo--addButton:hover {
-  background-color: #84BF04;
+  background-color: #84bf04;
 }
 .pizzaInfo--cancelButton {
   display: inline-block;
@@ -339,7 +339,7 @@ h1 {
 .cart--finalizar {
   padding: 20px 30px;
   border-radius: 20px;
-  background-color: #84BF04;
+  background-color: #84bf04;
   color: #fff;
   cursor: pointer;
   text-align: center;
@@ -441,4 +441,11 @@ h1 {
   .pizzaInfo--cancelMobileButton {
     display: block;
   }
+}
+.footer--area {
+  background: #ffab62;
+  width: 100%;
+  position: absolute;
+  bottom: -350px;
+  left: 0;
 }
